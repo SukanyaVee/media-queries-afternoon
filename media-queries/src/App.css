@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  /* margin-top: 80px; */
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
-  background-color: #222;
-  height: 50px;
+  /* background-color: #222; */
+  height: 80px;
   padding: 20px;
   color: white;
   display: flex;
@@ -20,16 +21,25 @@
   position: fixed;
   top: 0; 
   width: 100%;
-  margin: 0;
+  /* margin: 0; */
 }
 
 .sticky {
-  
+  height: 50px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black; 
+  align-items: center;
+  position: fixed;
+  top: 0; 
+  width: 100%; 
 }
 
-
 .main {
-  margin-top: 80px;
+  /* margin-top: 50px; */
 }
 
 .App-title {
@@ -48,7 +58,7 @@ font-family: 'Kaushan Script';
 
 .pic-content {
   width: 100%;
-  height: 600px;
+  height: 700px;
   background-image: url('work-desk.jpg');
   background-size: 100% 100%;
   display: flex;
@@ -62,14 +72,14 @@ font-family: 'Kaushan Script';
 .line1 {
   padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 30px;
+  font-size: 40px;
   font-style: italic;
 }
 
 .line2 {
   padding: 20px;
   font-family: sans-serif;
-  font-size: 50px;
+  font-size:75px;
   font-style: bold;
 }
 
@@ -86,26 +96,6 @@ font-family: 'Kaushan Script';
   margin: 20px;
 }
 
-@media (max-width: 900px) {
-  .App-header {
-    /* height: 100px; */
-  }
-
-  .menu {
-    display: none;
-  }
-  .menu-btn {
-    display: flex;
-    background-color: #fed136;
-    color: white;
-    border: none;
-    border-radius: 5px;
-  }
-
-  .line2 {
-    width: 400px;
-  }
-}
 
 .services {
   margin-top: 100px;
@@ -139,7 +129,7 @@ font-family: 'Kaushan Script';
 
 .dabba {
   margin: 20px;
-  max-width: 200px;
+  /* max-width: 200px; */
 }
 
 .service-title {
@@ -152,6 +142,29 @@ font-family: 'Kaushan Script';
   margin-top: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: grey;
+  line-height: 25px;
+}
+
+@media (max-width: 900px) {
+  .App-header {
+    height: 50px;
+    background: black;
+  }
+
+  .menu {
+    display: none;
+  }
+  .menu-btn {
+    display: flex;
+    background-color: #fed136;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .line2 {
+    width: 400px;
+  }
 }
 
 @media (max-width: 700px) {

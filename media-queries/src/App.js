@@ -6,10 +6,32 @@ import p2 from './2.png'
 import p3 from './3.png'
 
 class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      className: "App-header"
+    }
+  }
+
   render() {
+    // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+    //Choose header as element to be manipulated
+    // var header = document.getElementById("App-Header");
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    
+    function myFunction() {
+      if (window.pageYOffset >= 50) {
+        this.state.className="sticky";
+      } else {
+        this.state.className="App-header";
+      }
+    }
+
     return (
       <div className="App">
-        <header className="App-header">
+        <header className={this.state.className} id="App-Header">
             <div className="App-title">Start Bootstrap</div>
             <div className="menu">SERVICES&nbsp; PORTFOLIO &nbsp;ABOUT&nbsp; TEAM &nbsp;CONTACT</div>
             <button className="menu-btn"><b>MENU=</b></button>
